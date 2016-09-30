@@ -1,3 +1,6 @@
+// Soccer League Coordinator
+// This program takes a group of players and divides them evenly based on height and experience across 3 teams
+
 
 // Used this to get the random value generator
 import Foundation
