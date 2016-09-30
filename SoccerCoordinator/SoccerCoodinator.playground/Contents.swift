@@ -308,19 +308,3 @@ for team in teams {
     emailTeamGuardians(roster: team)
 }
 
-for player in dragonsTeam {
-    print(player)
-}
-getAverageHeight(roster: dragonsTeam)
-print(" ")
-for player in sharksTeam {
-    print(player)
-}
-getAverageHeight(roster: sharksTeam)
-print(" ")
-for player in raptorsTeam {
-    print(player)
-}
-getAverageHeight(roster: raptorsTeam)
-print(" ")
-
