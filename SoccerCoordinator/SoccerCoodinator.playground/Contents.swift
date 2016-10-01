@@ -237,7 +237,13 @@ repeat {
     // Used a random variable to change who gets first pick
     var firstPick = Int(arc4random_uniform(UInt32(3)))
     var teamCounter = firstPick
+    // Reset team variables to zero for loop. Otherwise, teams will continue to build
+    // on reassignment in the loop, if the average height difference in greater than 1.5
+    dragonsTeam.removeAll()
+    sharksTeam.removeAll()
+    raptorsTeam.removeAll()
     // Since the players are sorted by height, logic here is to get first and last pick in a rotation to try and keep the average heights even
+    sortedAllSoccerPlayers.count
     for player in sortedAllSoccerPlayers {
         var player = player
         switch teamCounter {
@@ -310,4 +316,3 @@ var teams = [dragonsTeam, sharksTeam, raptorsTeam]
 for team in teams {
     emailTeamGuardians(roster: team)
 }
-
